@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>index</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <!-- 轮播图 -->
+  <ion-slides  style="height:150px" *ngIf="list" autoplay=2000 pager=true loop=true> 
+    <ion-slide *ngFor="let tmp of list">
+      <img [src]="tmp.img_url"/>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
